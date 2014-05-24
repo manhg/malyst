@@ -1,0 +1,150 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="InterpretLogFile" Description="Tệp log ghi lại quá trình nhận dạng và phân tích" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">nhatky.txt</Value>
+    </Setting>
+    <Setting Name="MaximumQuestion" Description="Số câu hỏi tối đa có thể có trong đề." Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="BlankChar" Description="Ký tự hiển thị nếu không có phương án trả lời nào được chọn" Type="System.Char" Scope="Application">
+      <Value Profile="(Default)">X</Value>
+    </Setting>
+    <Setting Name="GroupsFile" Description="Tệp quan trọng, chứa dữ liệu về lớp, danh sách HS. Setting này lưu vị trí của tệp tin đó." Type="System.String" Scope="Application">
+      <Value Profile="(Default)">groups.malyst.xml</Value>
+    </Setting>
+    <Setting Name="DefaultDpi" Description="Độ phân giải quét mặc định" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="WindowCaption" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Malyst Scan</Value>
+    </Setting>
+    <Setting Name="KeyFileFilter" Description="Filter dùng để lọc ra tệp chứa đáp án/bộ đáp án" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Bộ đáp án của Malyst|*.key.xml|Tất cả các tệp|*.*</Value>
+    </Setting>
+    <Setting Name="LogFileFilter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Kết quả chấm điểm của Malyst|*.log.xml|Tất cả các tệp|*.*</Value>
+    </Setting>
+    <Setting Name="PrintPreviewCaption" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Xem trước khi in</Value>
+    </Setting>
+    <Setting Name="DefaultPrintFont" Type="System.Drawing.Font" Scope="Application">
+      <Value Profile="(Default)">Times New Roman, 11pt</Value>
+    </Setting>
+    <Setting Name="ImageFileFilter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Ảnh quét |*.tif;*.jpg;*.bmp|Tất cả các tệp|*.*</Value>
+    </Setting>
+    <Setting Name="RequireFillCoefficient" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.8</Value>
+    </Setting>
+    <Setting Name="MarkTheme" Description="Thang điểm" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="PencilThreshold" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">230</Value>
+    </Setting>
+    <Setting Name="BlackWhiteThreshold" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">160</Value>
+    </Setting>
+    <Setting Name="KeySymbol" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ABCD</Value>
+    </Setting>
+    <Setting Name="SuiteFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">suites.malyst.xml</Value>
+    </Setting>
+    <Setting Name="ColorHilight" Type="System.Drawing.Color" Scope="Application">
+      <Value Profile="(Default)">GradientActiveCaption</Value>
+    </Setting>
+    <Setting Name="PreprocessFolder" Description="Thư mục lưu kết quả của quá trình tiền xử lý" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\Malyst Data</Value>
+    </Setting>
+    <Setting Name="AnchorRadius" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="dConvertValueRatio" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">25.4</Value>
+    </Setting>
+    <Setting Name="dHorizonalAnchorDistanceByBase" Description="(BaseLength) Khoảng cách giữa top-left và bottom left, dùng để tính scale. Độ dài tính theo chiều dài ô cơ sở" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="dBaseLength" Description="(mm) Độ dài cơ sở: là chiều dài ô hình vuông chứa ở tâm nó ô tick. Đây cũng là độ dài dùng để tính toán chính khi xác định vị trí" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="dRootOffsetByX" Description="(BaseLength) tọa độ X.  Khoảng cách từ TL đến tâm tick A của câu số 1. Dùng để tính tọa độ Root" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+    <Setting Name="dRootOffsetByY" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">3.5</Value>
+    </Setting>
+    <Setting Name="C1_StartNo" Description="Cột 1: STT câu hỏi đầu tiên" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="C1_EndNo" Description="Cột 1: STT câu hỏi cuối cùng" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">17</Value>
+    </Setting>
+    <Setting Name="C2_StartNo" Description="Cột 2: STT câu hỏi đầu tiên" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">18</Value>
+    </Setting>
+    <Setting Name="C2_EndNo" Description="Cột 2: STT câu hỏi cuối cùng" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">33</Value>
+    </Setting>
+    <Setting Name="C3_StartNo" Description="Cột 3: STT câu hỏi đầu tiên" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">34</Value>
+    </Setting>
+    <Setting Name="C3_EndNo" Description="Cột 3: STT câu hỏi cuối cùng" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="C1_Xoffset" Description="Tính offset của cột kể từ root (tâm tick A của câu 1)" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="C1_Yoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="C2_Xoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="C2_Yoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="C3_Xoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="C3_Yoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CStudent_Xoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">18</Value>
+    </Setting>
+    <Setting Name="CProblem_Yoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">11</Value>
+    </Setting>
+    <Setting Name="CStudent_Yoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="CProblem_Xoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">18</Value>
+    </Setting>
+    <Setting Name="CGroup_Xoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">18</Value>
+    </Setting>
+    <Setting Name="CGroup_Yoffset" Type="System.Single" Scope="Application">
+      <Value Profile="(Default)">17</Value>
+    </Setting>
+    <Setting Name="PrintRows" Description="Số dòng trong một trang in" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">40</Value>
+    </Setting>
+    <Setting Name="PrintFont" Description="Kiểu chữ dùng khi in" Type="System.Drawing.Font" Scope="Application">
+      <Value Profile="(Default)">Times New Roman, 12pt</Value>
+    </Setting>
+    <Setting Name="PrintMargin" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="FilterRtf" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Định dạng RTF cho Word|*.rtf|Tất cả các tệp|*.*</Value>
+    </Setting>
+    <Setting Name="PrintRowsWithName" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">23</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="mly.xsl" type="text/xsl"?>
+<malyst><correct><suite>test.mly</suite><problem>123</problem><questions>5</questions><wrong>0.1</wrong><answer>ACCDB </answer><create>2008-06-29T14:15:34.296875+07:00</create></correct><correct><suite>test.mly</suite><problem>167</problem><questions>5</questions><wrong>0.1</wrong><answer>ADDCB </answer><create>2008-06-29T14:15:34.390625+07:00</create></correct></malyst>

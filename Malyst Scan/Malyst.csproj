@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="2.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2CEB1BA-1FD1-4908-ACE2-CE290C348110}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>MalystScan</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>1C9C5307BCDA6767678D43E62C3B7CBB926A111C</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Malyst_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <ApplicationIcon>autoList.ico</ApplicationIcon>
+    <StartupObject>Core.Program</StartupObject>
+    <PublishUrl>D:\Projects\Release\Malyst\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Malyst</ProductName>
+    <PublisherName>Giang Manh</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>1.3.8.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core.G2.cs" />
+    <Compile Include="FInterpretG2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInterpretG2.Designer.cs">
+      <DependentUpon>FInterpretG2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core.Print.cs" />
+    <Compile Include="FormAssistant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAssistant.Designer.cs">
+      <DependentUpon>FormAssistant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGetStarted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGetStarted.Designer.cs">
+      <DependentUpon>FormGetStarted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInterpret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInterpret.Designer.cs">
+      <DependentUpon>FormInterpret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKeyVisualize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKeyVisualize.Designer.cs">
+      <DependentUpon>FormKeyVisualize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewsuite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewsuite.Designer.cs">
+      <DependentUpon>FormNewsuite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGroups.Designer.cs">
+      <DependentUpon>FormGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core.cs" />
+    <Compile Include="Core.Utility.cs" />
+    <Compile Include="FormOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOption.Designer.cs">
+      <DependentUpon>FormOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormR.Designer.cs">
+      <DependentUpon>FormR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUnisuite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUnisuite.Designer.cs">
+      <DependentUpon>FormUnisuite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FInterpretG2.resx">
+      <DependentUpon>FInterpretG2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAssistant.resx">
+      <DependentUpon>FormAssistant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGetStarted.resx">
+      <DependentUpon>FormGetStarted.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInterpret.resx">
+      <DependentUpon>FormInterpret.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKeyVisualize.resx">
+      <DependentUpon>FormKeyVisualize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewsuite.resx">
+      <DependentUpon>FormNewsuite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGroups.resx">
+      <DependentUpon>FormGroups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption.resx">
+      <DependentUpon>FormOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormR.resx">
+      <DependentUpon>FormR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUnisuite.resx">
+      <DependentUpon>FormUnisuite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRotateSplit.resx">
+      <DependentUpon>FormRotateSplit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FormRotateSplit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRotateSplit.Designer.cs">
+      <DependentUpon>FormRotateSplit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmlDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\90acw-vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\90cw-vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\180cw-vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\result.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Malyst_TemporaryKey.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="autoList.ico" />
+    <Content Include="f1.ico" />
+    <Content Include="manual\images\create_suite.JPG" />
+    <Content Include="manual\images\hp4355.JPG" />
+    <Content Include="manual\images\hp7500.jpg" />
+    <Content Include="manual\images\interpret.JPG" />
+    <Content Include="manual\images\logo.jpg" />
+    <Content Include="manual\images\pre_interpret.JPG" />
+    <Content Include="manual\images\print.JPG" />
+    <Content Include="manual\images\re_interpret.JPG" />
+    <Content Include="manual\images\sample\dap_an_mau_157_169.key.xml" />
+    <Content Include="manual\images\sample\L 04072008 001.jpg" />
+    <Content Include="manual\images\sample\L 04072008 002.jpg" />
+    <Content Include="manual\images\sample_0.jpg" />
+    <Content Include="manual\images\sample_1.jpg" />
+    <Content Include="manual\images\sample_2.JPG" />
+    <Content Include="manual\images\visualizer.JPG" />
+    <Content Include="manual\manual.htm" />
+    <Content Include="phuong.ico" />
+    <Content Include="program.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="resources\rs_vert.png" />
+    <None Include="resources\rs_horz.png" />
+    <None Include="resources\rs_270.png" />
+    <None Include="resources\rs_180.png" />
+    <None Include="resources\rs_90.png" />
+    <None Include="resources\rs_dest.png" />
+    <None Include="30.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="50.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="80.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="80A.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\saveHS.png" />
+    <None Include="resources\ZoomHS.png" />
+    <None Include="resources\BarCodeHS.png" />
+    <None Include="resources\GoRtlHS.png" />
+    <None Include="resources\Favorites.png" />
+    <None Include="resources\Network_Internet.png" />
+    <None Include="resources\VPN.png" />
+    <None Include="resources\Keys.png" />
+    <None Include="resources\search.png" />
+    <None Include="resources\AutoList.png" />
+    <None Include="resources\delete.png" />
+    <None Include="resources\Likely_unavail.png" />
+    <None Include="resources\Generic_Document.png" />
+    <None Include="resources\Calculator.png" />
+    <None Include="resources\Folder_Front.png" />
+    <None Include="resources\HomeHS.png" />
+    <None Include="resources\newFolder.bmp" />
+    <None Include="resources\cut.png" />
+    <None Include="resources\preferences.png" />
+    <None Include="resources\Users.png" />
+    <None Include="resources\share_overlay.png" />
+    <None Include="resources\SecurityLock.png" />
+    <None Include="resources\K9A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

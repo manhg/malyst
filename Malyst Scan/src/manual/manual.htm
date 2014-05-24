@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Cach su dung chuong trinh Malyst</title>
+    <meta http-equiv="content-type" content="text/xhtml;charset=utf-8" />     
+	<style>
+		body {
+			/* font-family:Tahoma; 
+			font-size:12px;*/
+			width: 700px;
+			margin-left:50px;			
+		}
+		h3 {
+			background-color:rgb(207,243,255);
+		}
+		.overview,
+		{
+			width:200px;
+			float:right;
+			background-color:rgb(207,243,255);
+			border:10px;
+			padding:5px;
+		}
+		
+		.sample
+		{
+			left:50px;
+			background-color:rgb(207,243,255);
+			border:25px;
+		}
+		.banner
+		{
+			font-family:Tahoma;
+			font-size:11px;
+			font-weight:bold;
+			background-color:rgb(166,202,240);
+		}
+	</style>	
+</head>
+<body>
+	<div>		
+		
+		<div class="banner">Hướng dẫn sử dụng <br />Chương trình chấm trắc nghiệm bằng máy quét</div>
+		<div class="overview">
+			Mục lục, di chuyển nhanh đến:
+			<ol>				
+				<li><a href="#tq">Tổng quan</a></li>
+				<li><a href="#kh">Khả năng hiện tại của chương trình</a></li>
+				<li><a href="#bu">Các bước sử dụng cơ bản</a></li>
+				<li><a href="#ma">Mẫu giấy trắc nghiệm</a></li>
+				<li><a href="#qu">Quét bài</a></li>
+				<li><a href="#xu">Xử lý trước khi chấm</a></li>
+				<li><a href="#da">Tạo/mở đáp án</a></li>
+				<li><a href="#ch">Chấm bài</a></li>
+				<li><a href="#in">In, lưu kết quả ra văn bản</a></li>
+				<li><a href="#ho">Hỗ trợ kỹ thuật, phát triển chương trình</a></a></li>	
+				<hr />				
+				<li><a href="#sample_link">Dữ liệu thử</a></li>
+			</ol>				
+		</div>		
+		<img src="images/logo.jpg" width="333px" height="191px" />
+		<h1>Malyst Beta</h1>
+		<b>Phiên bản thử nghiệm 1.2.1</b><br />
+		<font size="0">Copyright(r) 2008 by Giang Mạnh. All right reserved. Project date: 2008-06-01</font>
+		<br />Bản quyền và hỗ trợ: Phone: 0979 439 458
+		
+		<div id="tq"><h3>Tổng quan</h3></a>
+		Chương trình chấm trắc nghiệm bằng máy quét này được đặt tên là Malyst (viết tắt từ mark anlayst).
+		Tốc độ chấm chấp nhận được. Thiết kế hữu dụng, hướng đến sự đơn giản. Phiên bản hiện tại là phiên bản thử nghiệm.
+		</div>
+		<div id="kh">
+		<h3>Khả năng hiện tại của chương trình</h3>
+			<ul>
+				<li>Chấm được trên hai mẫu trắc nghiệm khổ <b>A5 (14.8 x 21.0 cm)</b>,
+				Loại G1: tối đa 50 câu, 10000/kỳ kiểm tra, 100 mã đề.<br /> 
+				Loại G2:tối đa <b>80 câu, 100 học sinh/lớp, 1024 mã đề, 1024 lớp</b></li>
+				<li>Đối với bài thi số lượng lớn <b>(1 000 - 10 000 bài hoặc hơn)</b> không cần thiết đánh mã học sinh, 
+					<b>có thể chấm vô hạn bài, không cần nhập danh sách </b>vì tên, lớp được lấy trực tiếp từ bài thi</li>
+				<li>Nếu bài làm được tô đậm, thông tin chính xác, độ chính xác của chương trình là 100%</li>
+				<li>Nếu bài làm tô mờ, độ chính xác là <b>75%</b>, nếu chỉnh bằng tay có thể đạt <b>99%</b> (số liệu thực tế)</li>
+				<li>Không phụ thuộc máy quét nên không yêu cầu giấy đắt tiền</li>				
+				<li>Chấm được cả khi học sinh tô không phải bằng bút chì</li>				
+			</ul>
+		</div>
+		<div id="bu">
+		<h3 >Các bước sử dụng cơ bản</h3>
+		<ol>
+			<li>In phiếu trắc nghiệm hoặc photocopy. Để in cần có chương trình đọc tệp .pdf 
+			(có thể sử dụng <b>Adobe Reader</b> hoặc <b>Foxit Reader</b> có sẵn trong thư mục cài đặt của chương trình)</li>
+			<li>Cho học sinh làm bài, có thể đánh mã học sinh hoặc không đều được</li>
+			<li>Quét bài làm. Tốt nhất là sử dụng máy quét có khả năng tự động nạp giấy (máy quét ADF) hoặc sử dụng máy quét thông thường.
+			Luôn đặt giấy ở góc. Để riêng ra một thư mục</li>
+			<li>Mở chương trình Malyst. Nếu ghép 2 bài trong một lần quét, cần tách đôi chúng ra. Nếu quét một bài mỗi lần, cần phải bỏ vùng trắng</li>
+			<li>Tạo bộ đáp án có các mã đề tương ứng với bài làm</li>
+			<li>Mở menu Chấm điểm 0 -> G1 -> Thư mục. Nhấn nút Chấm , uống một cốc cà fê và chờ kết quả</li>
+			<li>Chấm xong rồi có thể chỉnh sửa các bài làm bị tô mờ rồi in kết quả. Đã xong!</li>			
+		</ol>		
+		</div>		
+		<div id="ma">
+		<h3 >Mẫu giấy trắc nghiệm</h3>
+		Đặc tính kỹ thuật: quan trọng nhất là hai hình quạt đen phía trái tờ giấy. Không được để vùng xung quanh chúng bị bẩn.
+		Khi in hoặc photo phải đảm bảo vùng này không bị mờ hoặc biến dạng.
+		Để đạt hiệu quả cao nhất nên sử dụng mẫu in sẵn được cung cấp. 
+		Không nên để giấy bị quá nghiêng, ảnh hưởng đến kết quả.<br />
+		<span class="sample">
+				<h4>Ví dụ mẫu: Bài làm đã được quét</h4>
+				<img src="images/sample_0.jpg"/>
+				<h4>Ví dụ: Mẫu chuẩn của Malyst(G1)</h4>
+				<img src="images/sample_2.jpg"/>
+			</span>
+		</div>		
+		<div id="qu">		
+		<h3>Quét bài</h3>
+			<p>
+				Trong điều kiện thực tế hiện nay phổ biến là máy quét úp (flatbed scanner) A4 chỉ có khả năng quét từng bản một.
+				Nếu sử dụng thiết bị này, nên ghép 2 bản liền nhau thành 1 tờ A4 rồi quét để tiết kiệm thời gian và công sức.			
+				<div class="sample"><img style="margin:25px;" src="images/sample_1.jpg" width="400px" height="600px"/></div>
+			</p>
+			<br />
+			<p>
+				<p><b>Thông số kỹ thuật</b>
+					<ul>
+						<li>Độ phân giải quét: <b>100 dpi</b>. Bắt buộc chương trình quét phải thực hiện ở độ phân giải này</li>
+						<li>Kích thước ảnh quét chấp nhận: khoảng 616x858</li>
+						<li>Ngưỡng đen xám ô được coi là đánh dấu: <b></b>(230,230,230) RGB (tương đương 9% đen) </b></li>
+					</ul>
+				</p>
+				<img style="float:right" src="images/hp7500.jpg" />				
+				Để đạt hiệu quả cao nhất cần sử dụng máy quét có khay nạp giấy tự động (máy quét shetfed hay ADF scanner).
+				Trên thị trường loại máy rời giá thành đắt hơn loại máy quét úp nhiều (ví dụ dòng HP Scanjet 7500).
+				</p>
+			<p>
+				<img style="float:right" src="images/hp4355.jpg" />
+				Giải pháp hiệu quả nhất là sử dụng máy in đa chức năng có khay ADF và có chức năng quét ADF.
+				Các dòng máy sử dụng tốt, giá cả hợp lý trong khoảng từ 2.000.000đ đến 4.000.000đ là:
+				<ul>
+					<li>HP OfficeJet 4355 </li>
+					<li>HP OfficeJet 5610</li>				
+					<li>Lexmark X4270</li>
+					<li>Xerox AIO Series</li>						
+				</ul>
+			</p>
+		</div>
+		<div id="xu">
+			<p></p>
+			Hiện tại chương trình chỉ hỗ trợ kiểu quét ghép 2 bài làm thành một tờ A4 rồi quét phẳng. Sau đó chạy chương trình
+			và mở menu Dữ liệu -> Xử lý -> Xoay cắt 90CW, cắt đôi dọc sẽ sinh ra các ảnh quét tách rời từng bài. Chay chấm điểm 
+			trên thư mục này sẽ được kết quả.</p>
+			<h3 id="sample_link">Dữ liệu thử</h3>
+			<p >Trong hướng dẫn này có thư mục chứa dữ liệu thử <a href="javascript:;" onclick="window.open('images/Sample/')">Sample </a>,
+			<a href="javascript:;" onclick="window.open('images/Sample/')">nhấn-vào-đây-để-mở</a>
+			<br />
+			Nội dung thư mục Sample:
+				<ul>
+					<li>1 tệp đáp án mẫu: <b>dap_an_mau_157_169.key.xml</b></li>
+					<li>30 bài thi mẫu, có thể chấm luôn</li>
+					<li>8 bài thi chưa cắt xén trong thư mục: <a href="javascript:;" onclick="window.open('images/Sample/Chua_xu_ly/');">Chua_xu_li</a></li>
+				</ul>
+			</p>
+		</div>
+		<div id="da">
+			<h3>Tạo mở bộ đáp án</h3>
+			<p>
+				Để tạo mới, nhấn biểu tượng tạo mới trên thanh công cụ hoặc nhấn Ctrl + N.
+				Một cửa sổ hiện ra như sau: <img src="images/create_suite.jpg" />
+			</p>
+			Chú ý:
+			<ul>				
+				<li>Nên chọn môn trước khi nhấn nút sinh mã đề </li>
+				<li>Mã đề luôn gồm các chữ số xếp theo thứ tự tăng dần, VD chỉ có mã 157 chứ không bao giờ có mã 175 hoặc 571,...</li>
+				<li>Không nên trực tiếp thay đổi mã đề</li>				
+				<li><p></p>Có hai kiểu nhập đáp án. Kiểu trực tiếp là nhập thẳng vào ô trên màn hình. VD đáp án có 5 câu, 1A, 2B, 3C, 4D, 5A
+				thì ta sẽ nhập vào là ABCDA (nhập liền). Khi số câu nhiều, để dễ nhìn ta gõ nhóm 5 câu một. VD đáp án 20 câu:
+				ACCCC BBBBB DDDDD AAAAA CCCCC</p>
+				<img src="images/visualizer.jpg" />
+				</li>				
+				<li>Kiểu nhập trực quan là sử dụng một của sổ phụ để nhập đáp án như hình vẽ. Đây sẽ là cách tốt để cần sửa chính xác
+				đáp án một câu nào đó hoặc để kiểm tra lại kết quả.				
+				</li>
+			</ul>
+			Sau khi nhập xong nhấn nút Lưu để giữ thông tin này dùng sau này. Tệp tin chứa đáp án có đuôi là <b>*.key.xml</b>
+			Trên cửa sổ chính của chương trình có nút <b>Đáp án</b> dùng để quản lý các đáp án được nạp vào chương trình.
+			Để mở một đáp án có sẵn, ta dùng nút Mở trên thanh công cụ hoặc Ctrl + O
+		</div>
+		<div id="ch">
+			<h3>Chấm bài</h3>
+			<b>Lưu ý: </b>
+			<ul>
+				<li>Luôn mở hoặc tạo mới một bộ đáp án trước khi chấm</li>
+				<li>Đảm bảo các ảnh quét bài làm được cắt xén phù hợp</li>
+			</ul>
+			Thao tác chấm rất đơn giản, chỉ cần vào Chấm điểm -> G1 -> Tệp hoặc thư mục rồi chỉ tới nơi chứa các ảnh quét bài làm.
+			Một cửa sổ hiện ra và chỉ cần nhấn vào nút "Chấm điểm mẫu G1", toàn bộ quá trình sẽ được tự động thực hiện. Xin vui lòng chờ nếu 
+			thấy chương trình có vẻ "đơ". Thực ra là nó đang xử lý.
+			Thao tác nhanh hơn bằng cách:
+			<ul>
+				<li>Nhấn <b>F9</b> để chấm một thư mục</li>
+				<li>Nhấn <b>F10</b> để chấm một hoặc nhiều tệp tin</li>
+			</ul>
+			<img src="images/pre_interpret.jpg" />
+			<img src="images/interpret.jpg" /><br />
+			<p>
+				Sau khi chấm, những bài nào có vấn đề sẽ bị đánh dấu. Nhấn nút chấm lại để tìm các bài bị lỗi và hiển thị chúng để ta tự chấm
+				bằng cách ... gõ bài làm và thông tin liên quan thủ công. Cách làm này chưa hay lắm nhưng hiện tại chưa có điều kiện phát triển
+				hướng đi khác. Khi gõ xong, chương trình sẽ tự động tính lại điểm theo bài làm và mã đề nhập vào.
+				Nút "Bài gốc" dùng để xem bài làm quét của dòng được chọn, tương tự như chế độ chấm lại.
+				<img src="images/re_interpret.jpg" />
+			</p>
+		</div>
+		<div id="in">
+			<h3>In và xuất kết quả</h3>
+			Chương trình hỗ trợ một kiểu in và một kiểu xuất kết quả.
+			<ul>
+			<li>Nếu in, danh sách sẽ gồm tên học sinh được cắt ra từ phiếu trả lời và điểm, mã đề, lớp tương ứng như hình dưới.
+			<img src="images/print.jpg" />
+			</li>
+			<li>Nếu xuất kết quả, mặc định chương trình sẽ chuyển sang dạng tệp tin .rtf đọc bằng Microsoft Word</li>
+			</ul>
+		</div>
+		<div id="ho">
+			<h3>Hỗ trợ kỹ thuật, phát triển chương trình</h3>
+			<ul>
+				<li>
+				Hiện tại chương trình còn đang có rất nhiều ý tưởng cải tiến và nâng cao tính năng của chương trình nhưng hiện tại vẫn <b>chưa</b>
+				có "nhà đầu tư" hay <b>nguồn hỗ trợ nào cho dự án.</b> Rất mong nhận được sự góp ý và hỗ trợ từ phía các <b>nhà trường, các ban giám
+				hiệu và thầy cô giáo </b>để sản phẩm mang lại lợi ích và ý nghĩa thiết thực nhất cho công việc sư phạm hàng ngày cũng như
+				trong việc tổ chức các <b>kỳ thi quy mô lớn với số lượng bài trắc nghiệm cỡ nghìn, vạn bài.</b>
+				</li>
+				<li>
+					Xin chân thành cảm ơn đã quan tâm đến sản phẩm này.
+					<hr /><br />
+					<b>Tác giả:</b>
+					<br />Giang Đức Mạnh 
+					<br />Khoa CNTT, ĐHBK Hà Nội
+					<br />Phone: 0979 439 458
+					<br />Malyst Manual, created on 2008-07-21.
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

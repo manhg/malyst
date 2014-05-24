@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MalystManager", "MalystManager.csproj", "{1ABD067A-5A79-4B39-AB41-3F2C46BB24EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiangManh.Option", "..\DllOption\GiangManh.Option.csproj", "{15C6404A-865C-4C2C-97E4-3B1177CE860A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiangManh.Utility", "..\DllUtility\GiangManh.Utility.csproj", "{3B206FFB-9905-4F2B-B169-76BBA2C06542}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ABD067A-5A79-4B39-AB41-3F2C46BB24EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABD067A-5A79-4B39-AB41-3F2C46BB24EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABD067A-5A79-4B39-AB41-3F2C46BB24EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABD067A-5A79-4B39-AB41-3F2C46BB24EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C6404A-865C-4C2C-97E4-3B1177CE860A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C6404A-865C-4C2C-97E4-3B1177CE860A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C6404A-865C-4C2C-97E4-3B1177CE860A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C6404A-865C-4C2C-97E4-3B1177CE860A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B206FFB-9905-4F2B-B169-76BBA2C06542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B206FFB-9905-4F2B-B169-76BBA2C06542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B206FFB-9905-4F2B-B169-76BBA2C06542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B206FFB-9905-4F2B-B169-76BBA2C06542}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
